@@ -13,6 +13,7 @@
     "@nuxtjs/axios": "^5.12.1",
     "dotenv": "^8.2.0",
     "express-session": "^1.17.1",
+    "netlify-lambda": "^2.0.1",
     "nuxt": "^2.14.0",
     "passport": "^0.4.1",
     "passport-spotify": "^1.1.0"
