@@ -88,5 +88,8 @@ export default {
   ],
   router: {
     middleware: 'session'
+  },
+  axios:{
+    baseURL:"https://spotify-musicmixer.herokuapp.com/"
   }
 }
