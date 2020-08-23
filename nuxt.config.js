@@ -90,6 +90,6 @@ export default {
     middleware: 'session'
   },
   axios:{
-    baseURL:"https://spotify-musicmixer.herokuapp.com/"
+    baseURL:process.env.URL
   }
 }

@@ -244,14 +244,14 @@ export default {
       let prev = null;
       let totalTime = 0;
       while (time > 1000 * 60) {
-        let selectableList = mixTable.filter((m) => {
+        mixTable = mixTable.filter((m) => {
           return m.duration_ms < time && prev !== m;
         });
-        if (selectableList.length === 0) break;
-        let idx = Math.floor(Math.random() * selectableList.length);
-        let music = selectableList[idx];
-        selectableList.splice(idx, 1);
-        if(selectableList.length == 0) selectableList = [...this.musicListSelected];
+        if (mixTable.length === 0) break;
+        let idx = Math.floor(Math.random() * mixTable.length);
+        let music = mixTable[idx];
+        mixTable.splice(idx, 1);
+        if(mixTable.length == 0) mixTable = [...this.musicListSelected];
         list.push(music);
         prev = music;
         totalTime += music.duration_ms;
