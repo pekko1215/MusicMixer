@@ -251,7 +251,7 @@ export default {
         let idx = Math.floor(Math.random() * selectableList.length);
         let music = selectableList[idx];
         selectableList.splice(idx, 1);
-        selectableList = [...this.musicListSelected];
+        if(selectableList.length == 0) selectableList = [...this.musicListSelected];
         list.push(music);
         prev = music;
         totalTime += music.duration_ms;
