@@ -54,6 +54,7 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
+    "@nuxtjs/axios"
   ],
   /*
   ** vuetify module configuration
@@ -84,5 +85,8 @@ export default {
   },
   serverMiddleware:[
     '~/server'
-  ]
+  ],
+  router: {
+    middleware: 'session'
+  }
 }
